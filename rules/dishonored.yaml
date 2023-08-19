@@ -1,0 +1,9 @@
+name: Dishonored
+issues: |
+  At least when restoring a quicksave, the game crashes if you try to instantly load it.
+  It seems you have to quit and restart the game before loading a restored file.
+platforms:
+  windows:
+    executable: "*\\Dishonored.exe"
+    savegames:
+      - "${ProgramFiles(x86)}\\Steam\\userdata\\*\\205100\\remote\\*.sav"  # Steam

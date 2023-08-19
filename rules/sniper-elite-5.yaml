@@ -1,0 +1,6 @@
+name: Sniper Elite 5
+platforms:
+  windows:
+    executable: "*\\SniperElite5.exe"
+    savegames:
+      - "${LOCALAPPDATA}\\Sniper Elite 5\\PC_ProfileSaves\\*\\*.sav"
