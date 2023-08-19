@@ -72,6 +72,8 @@ Common environment variables you would use are then as follows:
   - `${ProgramFiles}` - `C:\Program Files`
   - `${ProgramFiles(x86)}` - `C:\Program Files (x86)`
   - `${USERPROFILE}` - `C:\Users\username`
+  - `${MyDocuments}` - Added by Baacup at runtime, normally `C:\Users\username\My Documents`, but
+    determined via Windows "known folder" system so if it is moved, it should still work
 - \*nix based systems:
   - `${HOME}` - The home folder of your user account. E.g. `/home/username/` or `/Users/username/`
 
