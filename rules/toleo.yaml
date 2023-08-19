@@ -1,0 +1,10 @@
+name: Toleo
+platforms:
+  windows:
+    executable: "*\\Toleo.exe"
+    savegames:
+      - "${APPDATA}\\Godot\\app_userdata\\Toleo\\save*.json"
+  linux:
+    executable: "*/Toleo.x86_64"
+    savegames:
+      - "${HOME}/.local/share/godot/app_userdata/Toleo/save*.json"

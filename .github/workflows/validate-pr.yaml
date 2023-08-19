@@ -1,0 +1,22 @@
+name: Validate Pull Request
+
+on:
+  pull_request:
+    types: [opened, synchronize, edited]
+
+jobs:
+  Validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.10
+
+      - name: Install tools
+        run: pip install pre-commit
+
+      - name: Run pre-commit
+        run: pre-commit run --all-files || exit 1

@@ -1,0 +1,10 @@
+name: Beyond A Steel Sky
+platforms:
+  windows:
+    executable: "*\\BASS2\\Binaries\\Win64\\BASS2-*.exe"
+    savegames:
+      - "${LOCALAPPDATA}\\BASS2\\Saved\\SaveGames\\*.sav"
+  linux:
+    executable: "*/BASS2/Binaries/Linux/BASS2-Linux-*"
+    savegames:
+      - "${HOME}/.config/Epic/BASS2/Saved/SaveGames/*.sav"
