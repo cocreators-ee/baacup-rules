@@ -29,19 +29,19 @@ name: Baldur's Gate 2
 issues: Optional explanation of any issues with these rules.
 platforms:
   windows:
-    executable: *\\bg2.exe
+    executable: "*\\bg2.exe"
     savegames:
-      - ${LOCALAPPDATA}\\SomePublisher\\BG2\\quicksave.sav
-      - ${LOCALAPPDATA}\\SomePublisher\\BG2\\autosave.sav
-      - ${LOCALAPPDATA}\\SomePublisher\\BG2\\saves\\*.sav
+      - "${LOCALAPPDATA}\\SomePublisher\\BG2\\quicksave.sav"
+      - "${LOCALAPPDATA}\\SomePublisher\\BG2\\autosave.sav"
+      - "${LOCALAPPDATA}\\SomePublisher\\BG2\\saves\\*.sav"
   linux:
-    executable: */bg2.bin
+    executable: "*/bg2.bin"
     savegames:
-      - ${HOME}/.local/savegames/BG2/*.sav
+      - "${HOME}/.local/savegames/BG2/*.sav"
   macos:
-    executable: */bin/bg2
+    executable: "*/bin/bg2"
     savegames:
-      - ${HOME}/Save Games/Baldur's Gate 2/*.macsav
+      - "${HOME}/Save Games/Baldur's Gate 2/*.macsav"
 ```
 
 ## Using these rules
